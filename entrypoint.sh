@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# workaround for https://github.blog/2022-04-12-git-security-vulnerability-announced/
+# I believe Github should address this.
+git config --global --add safe.directory /github/workspace
+
 cd "${GITHUB_WORKSPACE}" || exit 1
 
 export REVIEWDOG_GITHUB_API_TOKEN="${INPUT_GITHUB_TOKEN}"
