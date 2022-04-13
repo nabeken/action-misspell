@@ -2,6 +2,11 @@
 
 set -x
 
+ls -alh
+pwd
+df
+
+git version
 git rev-parse --show-prefix
 
 cd "${GITHUB_WORKSPACE}" || exit 1
