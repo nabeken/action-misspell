@@ -2,12 +2,7 @@
 
 set -x
 
-ls -alh
-pwd
-df
-
-whoami
-
+git config --global --add safe.directory /github/workspace
 git version
 git rev-parse --show-prefix
 
