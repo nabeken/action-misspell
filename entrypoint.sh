@@ -6,6 +6,8 @@ ls -alh
 pwd
 df
 
+whoami
+
 git version
 git rev-parse --show-prefix
 
