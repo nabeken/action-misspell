@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -x
+
+git rev-parse --show-prefix
+
 cd "${GITHUB_WORKSPACE}" || exit 1
 
 export REVIEWDOG_GITHUB_API_TOKEN="${INPUT_GITHUB_TOKEN}"
