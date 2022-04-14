@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "The upstream now includes the fix for the issue that this fork fixed." >&2
+exit 1
+
 # workaround for https://github.blog/2022-04-12-git-security-vulnerability-announced/
 # I believe Github should address this.
 git config --global --add safe.directory /github/workspace
